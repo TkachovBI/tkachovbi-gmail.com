@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="97824159-exit-web-interface-button-red-color-application-log-out-internet-design-stock-footage.jpg" />
+    <None Remove="mainBack.jpg" />
+    <None Remove="Без названия.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.19" />
+    <PackageReference Include="NLog.Config" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="97824159-exit-web-interface-button-red-color-application-log-out-internet-design-stock-footage.jpg" />
+    <Resource Include="mainBack.jpg" />
+    <Resource Include="Без названия.png" />
+  </ItemGroup>
+
+</Project>

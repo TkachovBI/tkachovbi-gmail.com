@@ -1,0 +1,109 @@
+﻿<Window x:Class="WPFFinalproject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFFinalproject"
+        mc:Ignorable="d"
+        Title="City Bus Controller" Height="450" Width="800" Background="#FF00E8FF" Icon="Без названия.png">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="mainBack.jpg" TileMode="None" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="48*"/>
+            <ColumnDefinition Width="685*"/>
+            <ColumnDefinition Width="67*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Column="1" Name="TextBoxName"  HorizontalAlignment="Left" FontSize="20" Height="31" Margin="4,72,0,0" Text="Write here your name" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.546"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.49"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Name" Name="LableName"  FontSize="30" HorizontalAlignment="Left" Height="47" Margin="61,17,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1"/>
+        <TextBox x:Name="TextBoxPassword"  HorizontalAlignment="Left" FontSize="20" Height="31" Margin="40,156,0,0" Text="Write here your Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.546"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.49"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Password" x:Name="LableName_Copy"  FontSize="30" HorizontalAlignment="Left" Height="47" Margin="39,108,0,0" VerticalAlignment="Top" Width="134" Grid.Column="1"/>
+        <TextBox x:Name="TextBoxPassword_Copy"  HorizontalAlignment="Left" FontSize="16" Height="31" Margin="40,203,0,0" Text="Write here your Password again" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.546"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.49"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Name="Sing_Up" Content="Sing Up" FontStyle="Italic" HorizontalAlignment="Left" FontSize="24" Height="35" Margin="44,295,0,0" VerticalAlignment="Top" Width="228" Grid.ColumnSpan="2" Click="Button_Click"/>
+        <Label Content="Id"  Name="LableNameSingIn"  FontSize="30" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="557,13,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox Grid.Column="1" x:Name="TextBoxNameSingIn"  HorizontalAlignment="Left" FontSize="20" Height="31" Margin="461,72,0,0" Text="Write here your id" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.546"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.49"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Password" x:Name="LableName_Copy1"  FontSize="30" HorizontalAlignment="Left" Height="47" Margin="497,119,0,0" VerticalAlignment="Top" Width="134" Grid.Column="1"/>
+        <TextBox x:Name="TextBoxPassword_Copy1"  HorizontalAlignment="Left" FontSize="20" Height="31" Margin="451,169,0,0" Text="Write here your Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.Column="1">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.546"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.49"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Name="Sing_In" Content="Sing In" FontSize="30" FontStyle="Italic" HorizontalAlignment="Left" Height="46" Margin="460,274,0,0" VerticalAlignment="Top" Width="228" Grid.Column="1" Grid.ColumnSpan="2" Click="Button_Click_1"/>
+        <Button Name="BtnIAWAR" Content="I agree with all rules" Grid.Column="1" HorizontalAlignment="Left" Height="33" Margin="28,249,0,0" VerticalAlignment="Top" Width="171" Click="BtnIAWAR_Click"/>
+        <Button x:Name="BtnIAWAR_Copy" Content="I agree with all rules" Grid.Column="1" HorizontalAlignment="Left" Height="33" Margin="491,226,0,0" VerticalAlignment="Top" Width="171" Click="BtnIAWAR_Click"/>
+        <Label Name="LableCarNumber" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="17,18,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="473" Grid.ColumnSpan="2"/>
+        <Label x:Name="LableCarNumber_Copy" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="17,58,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="472" Grid.ColumnSpan="2"/>
+        <Label x:Name="LableCarNumber_Copy1" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="17,98,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="472" Grid.ColumnSpan="2"/>
+        <Label x:Name="LableCarNumber_Copy2" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="17,138,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="472" Grid.ColumnSpan="2"/>
+        <Label x:Name="LableCarNumber_Copy3" Content="Label" FontSize="18" Background="Blue" Margin="0,0,459,162" HorizontalAlignment="Right" Width="250" Height="41" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+        <Label x:Name="LableCarNumber_Copy4" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="0,0,459,122" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="250" Grid.ColumnSpan="2"/>
+        <Label x:Name="LableCarNumber_Copy5" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="17,179,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="473" Grid.ColumnSpan="2"/>
+        <Button Content="Exit" FontSize="24" Grid.Column="1" HorizontalAlignment="Left" Height="54" Margin="258,341,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF00F3FF" Offset="1"/>
+                    <GradientStop Color="#FF004043" Offset="0.45"/>
+                    <GradientStop Color="#FF00848B" Offset="0.574"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="LableCarNumber_Copy6" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="0,0,460,68" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="250" Grid.ColumnSpan="2"/>
+        <Label x:Name="LableCarNumber_Copy7" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="0,0,460,27" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="250" Grid.ColumnSpan="2"/>
+        <Button Name="SetAgeBtn" Content="Apply" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="404,255,0,0" VerticalAlignment="Top" Width="58" Click="SetAgeBtn_Click"/>
+        <TextBox Name="SetAgeTB" HorizontalAlignment="Left" Height="48" Margin="239,247,0,0" Text="Write here your age)" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Grid.Column="1"/>
+        <Label x:Name="LableWay" Content="Label" Height="41" FontSize="18" Background="Blue" Margin="0,0,32,370" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="250" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Name="BtnWayEnd"  Content="End the task on the way"  Grid.Column="1" HorizontalAlignment="Left" Height="51" Margin="487,211,0,0" VerticalAlignment="Top" Width="218" Grid.ColumnSpan="2" Click="BtnWayEnd_Click"/>
+        <TextBox Name="CarCond" Grid.Column="1" HorizontalAlignment="Left" FontSize="18" Height="51" Margin="487,150,0,0" Text="Write here vehicle condition from 0.0 to 99.9" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Grid.ColumnSpan="2"/>
+        <TextBox Name="TBDistance" Grid.Column="1" HorizontalAlignment="Left" FontSize="18" Height="51" Margin="488,92,0,0" Text="Write here distance from the way" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Grid.ColumnSpan="2"/>
+        <Button Name="Btnstation" Content="Send car to station" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="522,344,0,0" VerticalAlignment="Top" Width="127" Click="Button_Click_3"/>
+        <TextBox Name="DriverIdTB"  Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="17,5,0,0" Text="driver Id" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox Name="WayNumber" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="17,42,0,0" Text="way number" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        <Button Name="SetWay" Content="Set" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="14,87,0,0" VerticalAlignment="Top" Width="73" Click="SetWay_Click"/>
+        <TextBox Name="CarNumberTB" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="128,43,0,0" Text="Car number" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        <Button Name="SetCar" Content="Set" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="121,88,0,0" VerticalAlignment="Top" Width="73" Click="SetCar_Click"/>
+
+    </Grid>
+</Window>
