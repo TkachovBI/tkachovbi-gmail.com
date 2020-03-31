@@ -5812,11 +5812,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tkach\\Desktop\\C# + .Net core\\hillel-cs-kids\\BogdanTkachov\\Final_Project\\WPFFinalproject\\WPFFinalproject\\WPFFinalproject.csproj",
+      "projectUniqueName": "C:\\Users\\tkach\\Desktop\\C# + .Net core\\GitFinalTask\\tkachovbi-gmail.com\\Final_Project\\WPFFinalproject\\WPFFinalproject\\WPFFinalproject.csproj",
       "projectName": "WPFFinalproject",
-      "projectPath": "C:\\Users\\tkach\\Desktop\\C# + .Net core\\hillel-cs-kids\\BogdanTkachov\\Final_Project\\WPFFinalproject\\WPFFinalproject\\WPFFinalproject.csproj",
+      "projectPath": "C:\\Users\\tkach\\Desktop\\C# + .Net core\\GitFinalTask\\tkachovbi-gmail.com\\Final_Project\\WPFFinalproject\\WPFFinalproject\\WPFFinalproject.csproj",
       "packagesPath": "C:\\Users\\tkach\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tkach\\Desktop\\C# + .Net core\\hillel-cs-kids\\BogdanTkachov\\Final_Project\\WPFFinalproject\\WPFFinalproject\\obj\\",
+      "outputPath": "C:\\Users\\tkach\\Desktop\\C# + .Net core\\GitFinalTask\\tkachovbi-gmail.com\\Final_Project\\WPFFinalproject\\WPFFinalproject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
